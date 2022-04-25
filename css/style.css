@@ -46,7 +46,7 @@ a {
     flex-direction: column;
 }
 .section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .title {
@@ -100,7 +100,8 @@ a {
 .logo__title{
     text-transform: uppercase;
     width: max-content;
-    font-weight: 400;
+    font-weight: 500;
+    color: #343D33;
     font-size: 23px;
 }
 .logo__subtitle{
@@ -138,8 +139,10 @@ a {
 }
 .title{
     font-size: 57px;
+    line-height: 63px;
 }
 .hero__desc{
+    line-height: 38px;
     font-weight: 150px;
     font-size: 25px;
 }
@@ -165,21 +168,23 @@ a {
 .about{
     background-color: #343d33;
     color: white;
+    display: flex;
 }
 .about__container{
     max-width: 1040px;
     padding: 97px 0;
-    height: 100%;
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 .about__top{
-    height: 354px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
 }
 .about__info{
+    line-height: 30px;
     margin: 46px 0;
     font-size: 20px;
     font-weight: 150;
@@ -206,10 +211,25 @@ a {
 
 .news__subtitle{
     color: #343D33;
+    margin-top: 98px;
+    margin-bottom: 16px;
 }
 .news__content{
+    margin-top: 48px;
     display: flex;
     justify-content: space-between;
+}
+.news__link::before{
+    content: '';
+    width: 131px;
+    height: 2px;
+    display: inline-block;
+    background-color: #475F45;
+    margin-right: 20px;
+    margin-bottom: 4px;
+}
+.news__link{
+    text-transform: uppercase;
 }
 
 .news__list{
@@ -217,21 +237,28 @@ a {
     height: 535px;
 }
 .news__item{
-    height: 171px;
+    min-height: 171px;
     display: flex;
     border-bottom: lightgray 1px solid;
     margin-bottom: 20px;
 }
 .news__item-title{
+    font-family: 'Libre Baskerville';
     color: #475F45;
     font-size: 23px;
 }
 .news__item-desc{
     color: #414840;
+    padding: 15px 20px;
+    height: 151px;
 }
 .news__item-date{
     font-style: italic;
     color: #343D33;
+}
+.news__item-text{
+    margin: 16px 0;
+    line-height: 24px;
 }
 .news__item:last-child{
     margin-bottom: 0px;
@@ -252,4 +279,29 @@ a {
 .news__img--big{
     height: 333px;
     width: 100%;
+}
+
+/* Footer */
+
+
+
+/* Adaptive */
+
+@media (max-width: 768px){
+    .nav{
+        display: none;
+    }
+    .hero__content{
+        flex-direction: column;
+    }
+    .hero__info{
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    .hero__btns{
+        justify-content: center;
+    }
+    .hero{
+        padding: 0 0 64px 0;
+    }
 }
