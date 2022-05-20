@@ -315,8 +315,7 @@ a {
 .footer__top {
     padding: 40px 0;
 }
-.container {
-}
+
 .footer__container {
     display: flex;
     justify-content: space-between;
@@ -327,13 +326,31 @@ a {
 .footer__logo-block {
     color: white;
 }
-.logo__img {
+.social__list{
+    display: flex;
+    justify-content: space-between;
 }
-.logo__pic {
+.social__link{
+    position: absolute;
 }
-.logo__text {
+.twitter{
+    background-image: url(/img/icon/twitter.svg);
+    background-repeat: no-repeat;
 }
-.logo__subtitle {
+.mail{
+    background-image: url(/img/icon/mail.svg);
+    background-repeat: no-repeat;
+}
+.fb{
+    background-image: url(/img/icon/facebook.svg);
+    background-repeat: no-repeat;
+}
+.in{
+    background-image: url(/img/icon/linkedin.svg);
+    background-repeat: no-repeat;
+}
+.footer .logo__title{
+    color: white;
 }
 .footer__info {
     line-height: 24px;
@@ -341,12 +358,9 @@ a {
 .footer__subtitle {
     margin-bottom: 20px;
 }
-.footer__nav {
-}
+
 .footer__nav-list {
     line-height: 24px;
-}
-.footer__nav-item {
 }
 .footer__nav-link {
     color: white;
